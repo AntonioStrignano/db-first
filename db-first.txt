@@ -1,0 +1,20 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
+
+
+id                          int             AUTO_INCREMENT      Primary key
+marca                       varchar(30)     not_null
+modello                     varchar(50)     not_null
+vin                         varchar(17)     not_null
+anno                        smallint        default(2024)
+km                          int             not_null
+colore                      varchar(6)      not_null
+caratteristiche_vernice     varchar(50)     null
+tipo_di_carburante          varchar(20)     not_null
+cilindrata                  smallint        not_null
+potenza                     smallint        not_null
+cambio_manuale              tinyint         not_null
+numero_di_porte             tinyint         not_null
+targa                       varchar(7)      not_null
+descrizione                 text            null
+codice_proprietario         varchar(?)      not_null
+ultima_revisione            DATE            not_null
